@@ -1,6 +1,6 @@
 {
-  "name": "node-sample",
-  "description": "Our sample Node to Heroku app",
+  "name": "Trivia Arena!",
+  "description": "Trivia Arena!",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
