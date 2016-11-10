@@ -1,5 +1,5 @@
 {
-  "name": "Trivia Arena!",
+  "name": "trivia-arena",
   "description": "Trivia Arena!",
   "main": "server.js",
   "scripts": {
