@@ -1,7 +1,7 @@
 body {
     min-height: 75rem;
-    padding-top: 4.5rem;
+    padding-top: 4rem;
 }
 .jumbotron {
-    border-radius:40px;
+    border-radius:20px;
 }
