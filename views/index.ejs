@@ -54,28 +54,95 @@
 
 <section id="choose">
   <div class="container">
-  	<div class="jumbotron">
-  		<h1>Put the quiz choices here</h1>
-  		<p>This is a place to put info</p>
-  	</div>
+    <h2>Choose your set of terms here</h2>
+    <p>
+      <button type="button" class="btn btn-lg btn-default">Set 1</button>
+      <button type="button" class="btn btn-lg btn-default">Set 2</button>
+      <button type="button" class="btn btn-lg btn-default">Set 3</button>
+    </p>
   </div>
 </section>
 
 <section id="play">
   <div class="container">
-  	<div class="jumbotron">
-  		<h1>Put the game here</h1>
-  		<p>This is a place to put info</p>
-  	</div>
+    <h2>Game</h2>
+    
+    
+    <div class="container-fluid bg-info">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h3><span class="label label-warning" id="qid">1</span> THREE is CORRECT</h3>
+        </div>
+        <div class="modal-body">
+            <div class="col-xs-3 col-xs-offset-5">
+               <div id="loadbar" style="display: none;">
+                  <div class="blockG" id="rotateG_01"></div>
+                  <div class="blockG" id="rotateG_02"></div>
+                  <div class="blockG" id="rotateG_03"></div>
+                  <div class="blockG" id="rotateG_04"></div>
+                  <div class="blockG" id="rotateG_05"></div>
+                  <div class="blockG" id="rotateG_06"></div>
+                  <div class="blockG" id="rotateG_07"></div>
+                  <div class="blockG" id="rotateG_08"></div>
+              </div>
+          </div>
+
+          <div class="quiz" id="quiz" data-toggle="buttons">
+           <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="1" type="radio">1 One</label>
+           <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="2" type="radio">2 Two</label>
+           <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="3" type="radio">3 Three</label>
+           <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="4" type="radio">4 Four</label>
+       </div>
+   </div>
+   <div class="modal-footer text-muted">
+    <span id="answer"></span>
+</div>
+</div>
+</div>
+</div>
+
+    
+    
   </div>
 </section>
 
 <section id="scores">
   <div class="container">
-  	<div class="jumbotron">
-  		<h1>Put the scores here</h1>
-  		<p>This is a place to put info</p>
-  	</div>
+    <h2>Scoreboard</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Smith</td>
+                <td>4321</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jack</td>
+                <td>Spencer</td>
+                <td>1234</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>Twain</td>
+                <td>1111</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
   </div>
 </section>
 
