@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	
+	<link rel="stylesheet" href="example/style.css">
+	
 </head>
 <body>
 
@@ -64,40 +66,19 @@
     <h2>Game</h2>
     
     
-      <div class="container-fluid bg-info">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3><span class="label label-warning" id="qid">1</span> THREE is CORRECT</h3>
-            </div>
-            <div class="modal-body">
-              <div class="col-xs-3 col-xs-offset-5">
-               <div id="loadbar" style="display: none;">
-                  <div class="blockG" id="rotateG_01"></div>
-                  <div class="blockG" id="rotateG_02"></div>
-                  <div class="blockG" id="rotateG_03"></div>
-                  <div class="blockG" id="rotateG_04"></div>
-                  <div class="blockG" id="rotateG_05"></div>
-                  <div class="blockG" id="rotateG_06"></div>
-                  <div class="blockG" id="rotateG_07"></div>
-                  <div class="blockG" id="rotateG_08"></div>
-                </div>
-              </div>
-            <div class="quiz" id="quiz" data-toggle="buttons">
-             <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="1" type="radio">1 One</label>
-             <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="2" type="radio">2 Two</label>
-             <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="3" type="radio">3 Three</label>
-             <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input name="q_answer" value="4" type="radio">4 Four</label>
-           </div>
-         </div>
-         <div class="modal-footer text-muted">
-          <span id="answer"></span>
-          </div>
-        </div>
-      </div>
-    </div>
+    	<div id='container'>
+			  <div id='title'>
+				  <h1>Learning Js Properly: Project #1 - Dynamic Quiz</h1>
+			  </div>
+   			  <br/>
+  			  <div id='quiz'></div>
+    		  <div class='button' id='next'><a href='#'>Next</a></div>
+    		  <div class='button' id='prev'><a href='#'>Prev</a></div>
+    		  <div class='button' id='start'> <a href='#'>Start Over</a></div>
+    	</div>
+
+		<script src="example/index.js"></script>
     
-    <script src="quiz/quiz_template.js"></script>
     
   </div>
 </section>
