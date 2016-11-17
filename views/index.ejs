@@ -7,13 +7,14 @@
 	
 	<title>Trivia Arena</title>
 	
-	<script src="jquery/dist/jquery.min.js"></script>
+	<script src="jquery/dist/jquery.min.js" type="text/javascript"></script>
 		
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
-	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
 	
-	<link rel="stylesheet" href="example/style.css">
+	<link rel="stylesheet" href="styles/trivia-arena.css">
+	<script type="text/javascript" src="styles/trivia-arena.js"></script>
 	
 </head>
 <body>
@@ -31,11 +32,11 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#choose">Choose</a></li>
-        <li><a href="#play">Play</a></li>
-        <li><a href="#scores">Scores</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#home" data-toggle="collapse" data-target=".navbar-collapse.in">Home</a></li>
+        <li><a href="#choose" data-toggle="collapse" data-target=".navbar-collapse.in">Choose</a></li>
+        <li><a href="#play" data-toggle="collapse" data-target=".navbar-collapse.in">Play</a></li>
+        <li><a href="#scores" data-toggle="collapse" data-target=".navbar-collapse.in">Scores</a></li>
+        <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">About</a></li>
       </ul>
     </div>
   </div>
@@ -79,7 +80,7 @@
     		  <div class='button' id='start'> <a href='#'>Start Over</a></div>
     	</div>
 
-		<script src="example/index.js"></script>
+		<script src="styles/quiz.js"></script>
     
     
   </div>
