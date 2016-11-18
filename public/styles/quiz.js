@@ -135,9 +135,8 @@
         if(questionCounter === 1){
           $('#prev').show();
         } else if(questionCounter === 0){
-          
-          $('#prev').hide();
           $('#next').show();
+          $('#prev').hide();
         }
       }else {
         var scoreElem = displayScore();

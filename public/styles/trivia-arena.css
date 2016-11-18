@@ -1,20 +1,17 @@
-h1 {
+.h1 {
     text-align: center;
 }
 
-h3 {
+.h3 {
     text-align: center;
-}
-
-#quiz {
-    text-indent: 10px;
-    display:none;
 }
 
 .button {
     border:2px solid;
     border-radius:2px;
-    float:right;
+    padding: 2px 4px 2px 4px;
+    margin:auto;
+    float:left;
     background-color: #DCDCDC;
     color: black;
 }
@@ -29,8 +26,13 @@ h3 {
     color: black;
 }
 
-#container {
-    width:50%;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#game {
     margin:auto;
     padding: 0 25px 40px 10px;
     background-color: #1E90FF;
@@ -41,10 +43,9 @@ h3 {
     box-shadow: 5px 5px 5px #888;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+#quiz {
+    text-indent: 10px;
+    display:none;
 }
 
 #prev {
