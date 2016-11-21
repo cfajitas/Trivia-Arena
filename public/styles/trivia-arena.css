@@ -9,8 +9,8 @@
 .button {
     border:2px solid;
     border-radius:2px;
-    padding: 2px 4px 2px 4px;
-    margin:auto;
+    padding: 4px 10px 4px 10px;
+    margin: 4px;
     float:left;
     background-color: #DCDCDC;
     color: black;
@@ -30,6 +30,10 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.jumbotron {
+    margin: 10px;
 }
 
 #game {
@@ -54,5 +58,4 @@ ul {
 
 #start {
     display:none;
-    width: 90px;
 }
