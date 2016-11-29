@@ -2,23 +2,23 @@
   var questions = [{
     question: "Pick the undesirable user experience goal:",
     choices: ["Enjoyable", "Exciting", "Boring", "Helpful", "Rewarding"],
-    correctAnswer: "Boring"
+    correctAnswer: 3
   }, {
     question: "Pick the desirable user experience goal:",
     choices: ["Annoying", "Childish", "Cutesy", "Motivating", "Unpleasant"],
-    correctAnswer: "Motivating"
+    correctAnswer: 4
   }, {
     question: "What is not a interaction type?",
     choices: ["Instructing", "Sleeping", "Conversing", "Manipulating", "Exploring"],
-    correctAnswer: "Sleeping"
+    correctAnswer: 2
   }, {
     question: "What is not a stage in information processing?",
     choices: ["Response Execution", "Response Selection", "Comparison", "Encoding", "Eating"],
-    correctAnswer: "Eating"
+    correctAnswer: 5
   }, {
     question: "Which of these is an example of social interaction using modern technology?",
     choices: ["Tele-presence", "Talking", "Shouting", "Yelling", "Smoke Signals"],
-    correctAnswer: "Tele-presence"
+    correctAnswer: 1
   }];
   
   var questionCounter = 0; //Tracks question number
@@ -164,3 +164,4 @@
     return score;
   }
 })();
+
