@@ -72,6 +72,8 @@
   var questions;
   $('#next').hide();
   //displayNext(); hides initial quiz
+  $('#choose').hide();
+  var username = "";
   
   $('#set1').on('click', function (e){
     e.preventDefault()
@@ -80,6 +82,8 @@
     selections = [];
     $('#start').hide();
     $('#next').show();
+    $('#choose').hide();
+    $('#game').show();
     displayNext();
   });
   
@@ -90,6 +94,8 @@
     selections = [];
     $('#start').hide();
     $('#next').show();
+    $('#choose').hide();
+    $('#game').show();
     displayNext();
   });
   
@@ -100,8 +106,20 @@
     selections = [];
     $('#start').hide();
     $('#next').show();
+    $('#choose').hide();
+    $('#game').show();
     displayNext();
   });
+  
+  $('#submit').on('click', function (e){
+    e.preventDefault()
+    if($('#name').val() != ""){
+      $('#choose').show();
+      username = $('#name').val();
+      $('#getinfo').hide();
+    }
+  });
+  
   
   // Click handler for the 'next' button
   $('#next').on('click', function (e) {
@@ -145,6 +163,8 @@
     selections = [];
     displayNext();
     $('#start').hide();
+    $('#choose').show();
+    $('#game').hide();
   });
   
   // Animates buttons on hover
