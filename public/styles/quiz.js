@@ -2,67 +2,67 @@
   var data1 = [{
     question: "Pick the undesirable user experience goal:",
     choices: ["Enjoyable", "Exciting", "Boring", "Helpful", "Rewarding"],
-    correctAnswer: 3
+    correctAnswer: 2
   }, {
     question: "Pick the desirable user experience goal:",
     choices: ["Annoying", "Childish", "Cutesy", "Motivating", "Unpleasant"],
-    correctAnswer: 4
+    correctAnswer: 3
   }, {
     question: "What is not a interaction type?",
     choices: ["Instructing", "Sleeping", "Conversing", "Manipulating", "Exploring"],
-    correctAnswer: 2
+    correctAnswer: 1
   }, {
     question: "What is not a stage in information processing?",
     choices: ["Response Execution", "Response Selection", "Comparison", "Encoding", "Eating"],
-    correctAnswer: 5
+    correctAnswer: 4
   }, {
     question: "Which of these is an example of social interaction using modern technology?",
     choices: ["Tele-presence", "Talking", "Shouting", "Yelling", "Smoke Signals"],
-    correctAnswer: 1
+    correctAnswer: 0
   }];
   
 	var data2 = [{
   	question: "These are the advantages of __________ : Can be used early on, inexpensive and easy to create, make design idea visual, no special knowledge is required and all team members can creat them.",
- 	 choices: ["Personas", "Direct Manipulation", "Rapid Prototyping", "Lo-fi prototype"],
-  	correctAnswer: 4
+ 	  choices: ["Personas", "Direct Manipulation", "Rapid Prototyping", "Lo-fi prototype"],
+  	correctAnswer: 3
 	}, {
   	question: "The following statements are disadvantages of __________: They can be dificult to create if the target audience is international, Too much will make the work difficult, There is a risk of incoroporating unsupported designer assumption.",
   	choices: ["Card Sort", "Personas ", "Menu-based Interface", "Semantics"],
-  	correctAnswer: 2
+  	correctAnswer: 1
 	}, {
   	question: "Observation and elicitation are :",
   	choices: ["Tools for Physical Design", "Advantages of natural language", "Types of Observation", "Methods of Collection"],
-  	correctAnswer: 1
+  	correctAnswer: 0
 	}, {
   	question: "Which of he following are not one of Nielson's Heuristics for User Interface Design?",
   	choices: ["Error Prevention", "Consistency and Standards", "Help and Documentation", "Encoding", "Recognition Rather Than Recall"],
-  	correctAnswer: 4
+  	correctAnswer: 3
 	}, {
   	question: "Participants, design and testers are: ",
   	choices: ["Three phases in direct manipulation", "Three basic components for usability testing", "Three main criteria for lo-fi prototype", "Three main criteria for hi-fi prototype"],
-  	correctAnswer: 2
+  	correctAnswer: 1
 	}];
 	
 	var data3 = [{
   	question: "These are the advantages of __________ : Ease of Learning, Low memory requirement, flexible interaction, low screen requirement, appropriate for beginner",
   	choices: ["Commmand line", "Natural Language", "Menu-based Interface", "Usability Testing"],
-  	correctAnswer: 2
+  	correctAnswer: 1
   }, {
   	question: "Time, finance, personnel and laboratory are all _______",
   	choices: ["Advantages of usability testing", "Interaction styles", "Constraints on usability testing", "Obstacles of natural language"],
-  	correctAnswer: 3 
+  	correctAnswer: 2 
   }, {
   	question: "The following are _________________: Easy and inexpesive to make, flexible enough to be constantly changed and rearranged, complete enough to yield useful feedback about specific design questions.",
   	choices: ["Interface design standard tools", "Main criteria for lo-fi prototype", "Main criteria for hi-fi prototype", "Main criteria for conceptual design"],
-  	correctAnswer: 2    	
+  	correctAnswer: 1    	
   }, {
   	question: "The following are disadvantages of ___________: Rapid and inflexible navigation, inefficient for large menu navigation, infficient use of screen real estate, slow for experts",
   	choices: ["Natural Language", "Question and Answer", "Menu-based interface", "Direct Manipulation"],
-  	correctAnswer: 3 
+  	correctAnswer: 2 
   }, {
   	question: "Gulfs of ______ relate to the effectiveness principle",
   	choices: ["Evaluation", "Execution", "Natural Language", "Examination"],
-  	correctAnswer: 2
+  	correctAnswer: 1
   }];
   
   var questionCounter = 0; //Tracks question number
@@ -74,10 +74,12 @@
   //displayNext(); hides initial quiz
   $('#choose').hide();
   var username = "";
+  var setname = "";
   
   $('#set1').on('click', function (e){
     e.preventDefault()
     questions = data1;
+    setname = "Set 1";
     questionCounter = 0;
     selections = [];
     $('#start').hide();
@@ -90,6 +92,7 @@
   $('#set2').on('click', function (e){
     e.preventDefault()
     questions = data2;
+    setname = "Set 2";
     questionCounter = 0;
     selections = [];
     $('#start').hide();
@@ -102,6 +105,7 @@
   $('#set3').on('click', function (e){
     e.preventDefault()
     questions = data3;
+    setname = "Set 3";
     questionCounter = 0;
     selections = [];
     $('#start').hide();
@@ -256,7 +260,11 @@
     
     score.append('You got ' + numCorrect + ' questions out of ' +
                  questions.length + ' right!!!');
+    
+    $('#scoreboard > tbody:last-child').append('<tr><td>'+username+'</td><td>'+numCorrect+'</td><td>'+setname+'</td></tr>');
+                 
     return score;
   }
+  
 })();
 
